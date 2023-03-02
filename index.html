@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Digital Photo Album</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Customer Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					
+					<li><a class="active" href="#Registration" data-toggle="tab">Registration</a></li>
+                    <li><a  href="#Login" data-toggle="tab">Photo Album</a></li>
+                </ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						
+
+						<form role="form" class="form-horizontal">
+                            Upload Your Photo
+                            <p><input type="file" name="fileToUpload" id="fileToUpload">
+                            </p>
+                            <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                                Submit
+                            </button>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+
+                        <form role="form" class="form-horizontal">
+                            <p><b>Make Payment First</b></p>
+                            <p><b>TigoPesa +255 713 826 484</b></p>
+                            <p><b>Airtel Money +255 683 168 429</b></p>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+
+
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		
+				
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>Digital Photo Album<span class="m_1">Store your photos. The service is now available</span></h1>
+		</div>
+	</div>
+	
+    <div id="pricing-box" class="section wb">
+        <div class="container">
+			<div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricingTable-header">
+                            <span class="heading">
+                                <h3>Standard</h3>
+                            </span>
+                            <span class="price-value">Tsh20,000<span class="month">month</span> <span>Unlimited Offer </span></span></span>
+                        </div>
+
+                        <div class="pricingContent">
+                            <i class="fa fa-adjust"></i>
+                            <ul>
+                                <li>500+ Photos</li>
+                                <li>20GB Photo Album Space</li>
+                                <li>Easy Accessible</li>
+                                <li>Multi-Devices Supported</li>
+                                
+                            </ul>
+                        </div><!-- /  CONTENT BOX-->
+
+                        <div class="pricingTable-sign-up">
+                            <a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Book Now</span></a>
+                        </div><!-- BUTTON BOX-->
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable pink">
+                        <div class="pricingTable-header">
+                            <span class="heading">
+                                <h3>Business</h3>
+                            </span>
+                            <span class="price-value">Tsh30,000<span class="month">month</span> <span>Unlimited Offer</span><span></span></span>
+                        </div>
+
+                        <div class="pricingContent">
+                            <i class="fa fa-briefcase"></i>
+                            <ul>
+                                <li>1000+ Photos</li>
+                                <li>20GB Photo Album Space</li>
+                                <li>Easy Accessible</li>
+                                <li>Multi-Devices Supported</li>
+                            </ul>
+                        </div><!-- /  CONTENT BOX-->
+
+                        <div class="pricingTable-sign-up">
+                           
+                            <a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Book Now</span></a>
+                        </div><!-- BUTTON BOX-->
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable orange">
+                        <div class="pricingTable-header">
+                            <span class="heading">
+                                <h3>Premium</h3>
+                            </span>
+                            <span class="price-value">Tsh50,000<span class="month">month</span> <span>Unlimited Offer</span><span></span></span>
+                        </div>
+
+                        <div class="pricingContent">
+                            <i class="fa fa-cube"></i>
+                            <ul>
+                                <li>5000+ Photos</li>
+                                <li>20GB Photo Album Space</li>
+                                <li>Easy Accessible</li>
+                                <li>Multi-Devices Supported</li>
+                            </ul>
+                        </div><!-- /  CONTENT BOX-->
+
+                        <div class="pricingTable-sign-up">
+                            <a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Book Now</span></a>
+                        </div><!-- BUTTON BOX-->
+                    </div>
+                </div>
+            </div>
+		</div>
+    </div><!-- end section -->
+   
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+           
+            <hr class="invis"> 
+
+            <div class="row"> 
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/fashion.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Fashion Style Album</a></h2>
+							</div>
+							
+							
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/social.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Social Issues Album</a></h2>
+							</div>
+							
+							
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+                
+            <div class="row"> 
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/business.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Business Issues Album</a></h2>
+							</div>
+							
+							
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/culture.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Cultural Issues Album</a></h2>
+							</div>
+							
+							
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+                <hr>
+            <div class="row"> 
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/religious.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Religious Issues Album</a></h2>
+							</div>
+							
+							
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/political.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Political Issues Album</a></h2>
+							</div>
+							
+							
+						</div>
+						
+					</div>
+                </div><!-- end col -->
+            <hr>
+			
+				
+
+    <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('images/culture.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Witnesses</h3>
+                <p>See what Users say about the platform </p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/testi_01.png" alt="" class="img-fluid">
+                                <h4>Rebeccah Benard </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Wonderful Platform!</h3>
+                                <p class="lead">I normally store my project photos for every kind of my business issues</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/testi_02.png" alt="" class="img-fluid">
+                                <h4>Jumanne Abasi </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
+                                <p class="lead">Now I am sure that my photos will not be lost. Rather than storing only in my phone</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/testi_03.png" alt="" class="img-fluid ">
+                                <h4>Razak Mwangomikwe </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>Beautiful Service</h3>
+                                <p class="lead">Now I can access for my photos wherever I am through this platform </p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        
+                        </div><!-- end testimonial -->
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="parallax section dbcolor">
+        <div class="container">
+            <div class="row logos">
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_01.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_02.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_03.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_04.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_05.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_06.png" alt="" class="img-repsonsive"></a>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">All Rights Reserved &copy; 2023. Developed by : <a href="https://fmpiza.github.io/webfridolin">Fridolin</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
